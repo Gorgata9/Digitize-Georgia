@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="fr" class="scroll-smooth">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -7,7 +8,84 @@
     <script src="https://cdn.tailwindcss.com"></script>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;500;600;700;800;900&family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link
+        href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;500;600;700;800;900&family=Inter:wght@300;400;500;600;700&display=swap"
+        rel="stylesheet">
+    <script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@graph": [
+    {
+      "@type": "WebSite",
+      "@id": "https://gorgata9.github.io/Digitize-Georgia/#website",
+      "url": "https://gorgata9.github.io/Digitize-Georgia/",
+      "name": "Digitize Georgia",
+      "description": "Helping Georgian Businesses Grow by Getting Online. We build your first home page at zero cost.",
+      "inLanguage": "en-GE",
+      "publisher": {
+        "@id": "https://gorgata9.github.io/Digitize-Georgia/#organization"
+      }
+    },
+    {
+      "@type": "ProfessionalService",
+      "@id": "https://gorgata9.github.io/Digitize-Georgia/#organization",
+      "name": "Digitize Georgia",
+      "alternateName": "Developers Alliance",
+      "url": "https://gorgata9.github.io/Digitize-Georgia/",
+      "logo": "https://gorgata9.github.io/Digitize-Georgia/img/logo.png",
+      "image": "https://gorgata9.github.io/Digitize-Georgia/img/bakery.png",
+      "description": "Digitize Georgia empowers the Georgian local economy by building bespoke home pages for businesses at zero cost. A project by Developers Alliance.",
+      "address": {
+        "@type": "PostalAddress",
+        "addressLocality": "Tbilisi",
+        "addressCountry": "GE"
+      },
+      "areaServed": {
+        "@type": "Country",
+        "name": "Georgia"
+      },
+      "priceRange": "Free",
+      "offers": {
+        "@type": "Offer",
+        "name": "Free Website Creation",
+        "description": "Design, build, and hosting of a first home page for Georgian businesses at zero cost.",
+        "price": "0",
+        "priceCurrency": "GEL"
+      }
+    },
+    {
+      "@type": "BreadcrumbList",
+      "itemListElement": [
+        {
+          "@type": "ListItem",
+          "position": 1,
+          "name": "Home",
+          "item": "https://gorgata9.github.io/Digitize-Georgia/"
+        },
+        {
+          "@type": "ListItem",
+          "position": 2,
+          "name": "About Us",
+          "item": "https://gorgata9.github.io/Digitize-Georgia/#about"
+        },
+        {
+          "@type": "ListItem",
+          "position": 3,
+          "name": "Portfolio",
+          "item": "https://gorgata9.github.io/Digitize-Georgia/#portfolio"
+        },
+        {
+          "@type": "ListItem",
+          "position": 4,
+          "name": "Contact",
+          "item": "https://gorgata9.github.io/Digitize-Georgia/#contact"
+        }
+      ]
+    }
+  ]
+}
+</script>
+
     <script>
         tailwind.config = {
             theme: {
@@ -30,39 +108,64 @@
                 opacity: 0;
                 transform: translateY(30px);
             }
+
             to {
                 opacity: 1;
                 transform: translateY(0);
             }
         }
-        
+
         @keyframes fadeIn {
-            from { opacity: 0; }
-            to { opacity: 1; }
+            from {
+                opacity: 0;
+            }
+
+            to {
+                opacity: 1;
+            }
         }
 
         .animate-fade-in-up {
             animation: fadeInUp 0.8s ease-out forwards;
         }
-        
+
         .animate-fade-in {
             animation: fadeIn 1s ease-out forwards;
         }
 
-        .delay-100 { animation-delay: 0.1s; }
-        .delay-200 { animation-delay: 0.2s; }
-        .delay-300 { animation-delay: 0.3s; }
-        .delay-400 { animation-delay: 0.4s; }
-        .delay-500 { animation-delay: 0.5s; }
-        .delay-600 { animation-delay: 0.6s; }
+        .delay-100 {
+            animation-delay: 0.1s;
+        }
 
-        .opacity-0 { opacity: 0; }
+        .delay-200 {
+            animation-delay: 0.2s;
+        }
+
+        .delay-300 {
+            animation-delay: 0.3s;
+        }
+
+        .delay-400 {
+            animation-delay: 0.4s;
+        }
+
+        .delay-500 {
+            animation-delay: 0.5s;
+        }
+
+        .delay-600 {
+            animation-delay: 0.6s;
+        }
+
+        .opacity-0 {
+            opacity: 0;
+        }
 
         /* Custom border decorative elements */
         .decorative-border {
             position: relative;
         }
-        
+
         .decorative-border::before {
             content: '';
             position: absolute;
@@ -74,8 +177,9 @@
         }
     </style>
 </head>
+
 <body class="font-sans antialiased bg-neutral-50">
-    
+
     <!-- Navigation -->
     <nav class="fixed top-0 left-0 right-0 z-50 bg-white/95 backdrop-blur-sm border-b border-neutral-200">
         <div class="max-w-7xl mx-auto px-6 lg:px-8">
@@ -86,9 +190,11 @@
                 </div>
                 <div class="hidden md:flex items-center space-x-8">
                     <a href="#about" class="text-sm text-neutral-600 hover:text-primary transition-colors">About Us</a>
-                    <a href="#portfolio" class="text-sm text-neutral-600 hover:text-primary transition-colors">Portfolio</a>
+                    <a href="#portfolio"
+                        class="text-sm text-neutral-600 hover:text-primary transition-colors">Portfolio</a>
                     <a href="#contact" class="text-sm text-neutral-600 hover:text-primary transition-colors">Contact</a>
-                    <button class="flex items-center space-x-1 text-sm text-neutral-600 hover:text-primary transition-colors">
+                    <button
+                        class="flex items-center space-x-1 text-sm text-neutral-600 hover:text-primary transition-colors">
                         <span>🌐</span>
                         <span>GEO</span>
                     </button>
@@ -114,20 +220,24 @@
                 <!-- Right Column - Text Content -->
                 <div class="space-y-8 opacity-0 animate-fade-in-up delay-200">
                     <div>
-                        <h1 class="font-display font-bold text-5xl lg:text-6xl xl:text-7xl text-neutral-900 leading-tight">
+                        <h1
+                            class="font-display font-bold text-5xl lg:text-6xl xl:text-7xl text-neutral-900 leading-tight">
                             Helping Georgian Businesses <span class="text-primary">Grow</span> by Getting Online
                         </h1>
                     </div>
-                    
+
                     <p class="text-lg text-neutral-600 leading-relaxed max-w-xl">
-                        We build your first home page at zero cost. This empowers you and the Georgian local economy to flourish in the digital age of ecommerce, one craft at a time.
+                        We build your first home page at zero cost. This empowers you and the Georgian local economy to
+                        flourish in the digital age of ecommerce, one craft at a time.
                     </p>
 
                     <div class="flex flex-wrap gap-4 pt-4">
-                        <button class="px-8 py-4 bg-primary hover:bg-primary-dark text-white font-semibold rounded-md transition-all transform hover:scale-105 shadow-lg hover:shadow-xl">
+                        <button
+                            class="px-8 py-4 bg-primary hover:bg-primary-dark text-white font-semibold rounded-md transition-all transform hover:scale-105 shadow-lg hover:shadow-xl">
                             Claim Your Free Website
                         </button>
-                        <button class="px-8 py-4 border-2 border-neutral-300 hover:border-primary text-neutral-700 hover:text-primary font-semibold rounded-md transition-all">
+                        <button
+                            class="px-8 py-4 border-2 border-neutral-300 hover:border-primary text-neutral-700 hover:text-primary font-semibold rounded-md transition-all">
                             View our Portfolio
                         </button>
                     </div>
@@ -150,7 +260,9 @@
                     </div>
 
                     <p class="text-lg text-neutral-600 leading-relaxed pl-6">
-                        Our mission is rooted in the spirit of Georgian hospitality. We believe that artists, artisans, and business from the mountains of Svaneti to the vineyards of Kakheti, deserves a world-class digital platform to showcase their craft to the world.
+                        Our mission is rooted in the spirit of Georgian hospitality. We believe that artists, artisans,
+                        and business from the mountains of Svaneti to the vineyards of Kakheti, deserves a world-class
+                        digital platform to showcase their craft to the world.
                     </p>
                 </div>
 
@@ -172,20 +284,25 @@
                 <div class="flex flex-col h-full px-8 group border-r border-neutral-200">
                     <div class="flex-grow space-y-6 pb-8 min-h-[280px]">
                         <div class="flex items-center space-x-3">
-                            <div class="w-12 h-12 bg-primary/10 rounded-lg flex items-center justify-center group-hover:bg-primary/20 transition-colors">
+                            <div
+                                class="w-12 h-12 bg-primary/10 rounded-lg flex items-center justify-center group-hover:bg-primary/20 transition-colors">
                                 <svg class="w-6 h-6 text-primary" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M21 12a9 9 0 01-9 9m9-9a9 9 0 00-9-9m9 9H3m9 9a9 9 0 01-9-9m9 9c1.657 0 3-4.03 3-9s-1.343-9-3-9m0 18c-1.657 0-3-4.03-3-9s1.343-9 3-9m-9 9a9 9 0 019-9"></path>
+                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                        d="M21 12a9 9 0 01-9 9m9-9a9 9 0 00-9-9m9 9H3m9 9a9 9 0 01-9-9m9 9c1.657 0 3-4.03 3-9s-1.343-9-3-9m0 18c-1.657 0-3-4.03-3-9s1.343-9 3-9m-9 9a9 9 0 019-9">
+                                    </path>
                                 </svg>
                             </div>
                             <h3 class="font-display font-bold text-xl text-neutral-900">Bespoke Design</h3>
                         </div>
                         <p class="text-neutral-600 leading-relaxed">
-                            No templates. Every home page is a unique piece of digital architecture, built to reflect your craft and empower you to tailor the page to your specific needs.
+                            No templates. Every home page is a unique piece of digital architecture, built to reflect
+                            your craft and empower you to tailor the page to your specific needs.
                         </p>
                     </div>
                     <div class="border-t border-neutral-200 pt-6">
                         <p class="text-5xl font-display font-bold text-primary">75%</p>
-                        <p class="text-sm text-neutral-500 mt-2">trust gained by adding a company's credibility based solely on its website design</p>
+                        <p class="text-sm text-neutral-500 mt-2">trust gained by adding a company's credibility based
+                            solely on its website design</p>
                     </div>
                 </div>
 
@@ -193,21 +310,27 @@
                 <div class="flex flex-col h-full px-8 group border-r border-neutral-200">
                     <div class="flex-grow space-y-6 pb-8 min-h-[280px]">
                         <div class="flex items-center space-x-3">
-                            <div class="w-12 h-12 bg-primary/10 rounded-lg flex items-center justify-center group-hover:bg-primary/20 transition-colors">
+                            <div
+                                class="w-12 h-12 bg-primary/10 rounded-lg flex items-center justify-center group-hover:bg-primary/20 transition-colors">
                                 <svg class="w-6 h-6 text-primary" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17.657 16.657L13.414 20.9a1.998 1.998 0 01-2.827 0l-4.244-4.243a8 8 0 1111.314 0z"></path>
-                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 11a3 3 0 11-6 0 3 3 0 016 0z"></path>
+                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                        d="M17.657 16.657L13.414 20.9a1.998 1.998 0 01-2.827 0l-4.244-4.243a8 8 0 1111.314 0z">
+                                    </path>
+                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                        d="M15 11a3 3 0 11-6 0 3 3 0 016 0z"></path>
                                 </svg>
                             </div>
                             <h3 class="font-display font-bold text-xl text-neutral-900">Georgia Focus</h3>
                         </div>
                         <p class="text-neutral-600 leading-relaxed">
-                            Our team is comprised of Georgians who want to help Georgian businesses thrive in the market landscape and optimize every business's online presence across the nation.
+                            Our team is comprised of Georgians who want to help Georgian businesses thrive in the market
+                            landscape and optimize every business's online presence across the nation.
                         </p>
                     </div>
                     <div class="border-t border-neutral-200 pt-6">
                         <p class="text-5xl font-display font-bold text-primary">81%</p>
-                        <p class="text-sm text-neutral-500 mt-2">of consumers research a business online before making a purchase decision</p>
+                        <p class="text-sm text-neutral-500 mt-2">of consumers research a business online before making a
+                            purchase decision</p>
                     </div>
                 </div>
 
@@ -215,20 +338,25 @@
                 <div class="flex flex-col h-full px-8 group">
                     <div class="flex-grow space-y-6 pb-8 min-h-[280px]">
                         <div class="flex items-center space-x-3">
-                            <div class="w-12 h-12 bg-primary/10 rounded-lg flex items-center justify-center group-hover:bg-primary/20 transition-colors">
+                            <div
+                                class="w-12 h-12 bg-primary/10 rounded-lg flex items-center justify-center group-hover:bg-primary/20 transition-colors">
                                 <svg class="w-6 h-6 text-primary" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 8c-1.657 0-3 .895-3 2s1.343 2 3 2 3 .895 3 2-1.343 2-3 2m0-8c1.11 0 2.08.402 2.599 1M12 8V7m0 1v8m0 0v1m0-1c-1.11 0-2.08-.402-2.599-1M21 12a9 9 0 11-18 0 9 9 0 0118 0z"></path>
+                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                        d="M12 8c-1.657 0-3 .895-3 2s1.343 2 3 2 3 .895 3 2-1.343 2-3 2m0-8c1.11 0 2.08.402 2.599 1M12 8V7m0 1v8m0 0v1m0-1c-1.11 0-2.08-.402-2.599-1M21 12a9 9 0 11-18 0 9 9 0 0118 0z">
+                                    </path>
                                 </svg>
                             </div>
                             <h3 class="font-display font-bold text-xl text-neutral-900">Zero Cost</h3>
                         </div>
                         <p class="text-neutral-600 leading-relaxed">
-                            Your first home page is entirely on us. We design, build, and host it for free. This is part of our commitment to community values and Georgian businesses.
+                            Your first home page is entirely on us. We design, build, and host it for free. This is part
+                            of our commitment to community values and Georgian businesses.
                         </p>
                     </div>
                     <div class="border-t border-neutral-200 pt-6">
                         <p class="text-5xl font-display font-bold text-primary">64%</p>
-                        <p class="text-sm text-neutral-500 mt-2">of small businesses globally and now own a website, up from 58% just 3 years ago as they enter the digital landscape</p>
+                        <p class="text-sm text-neutral-500 mt-2">of small businesses globally and now own a website, up
+                            from 58% just 3 years ago as they enter the digital landscape</p>
                     </div>
                 </div>
             </div>
@@ -245,7 +373,7 @@
                         <div class="decorative-border pl-6">
                             <p class="text-sm font-semibold text-neutral-700 uppercase tracking-wider">Our Manifesto</p>
                         </div>
-                        
+
                         <div class="flex justify-center lg:justify-start pt-8">
                             <div class="relative">
                                 <img src="img/logo.png" alt="Digitize Georgia Logo" class="w-96 h-96 object-contain">
@@ -257,7 +385,8 @@
                     <div class="space-y-8">
                         <blockquote class="space-y-6 pb-8 border-b border-primary">
                             <p class="font-display font-medium text-3xl lg:text-4xl leading-tight text-neutral-900">
-                                "The future of Georgia is <span class="italic text-primary">digital</span>, and it begins with giving everyone a seat at the table."
+                                "The future of Georgia is <span class="italic text-primary">digital</span>, and it
+                                begins with giving everyone a seat at the table."
                             </p>
                         </blockquote>
 
@@ -266,7 +395,9 @@
                             <div class="space-y-3">
                                 <h4 class="font-display font-bold text-lg text-primary">Digital Roots</h4>
                                 <p class="text-neutral-600 text-sm leading-relaxed">
-                                    Digitize Georgia was founded by Developers Alliance on the principle that world-class technology should be accessible to all. We leverage our engineering expertise to ensure Georgia remains the digital heartbeat of the Caucasus.
+                                    Digitize Georgia was founded by Developers Alliance on the principle that
+                                    world-class technology should be accessible to all. We leverage our engineering
+                                    expertise to ensure Georgia remains the digital heartbeat of the Caucasus.
                                 </p>
                             </div>
 
@@ -274,7 +405,9 @@
                             <div class="space-y-3">
                                 <h4 class="font-display font-bold text-lg text-primary">Community First</h4>
                                 <p class="text-neutral-600 text-sm leading-relaxed">
-                                    This initiative is about more than just code, it's about commerce and connection. By bringing local businesses online, we strengthen the economic fabric of our entire nation.
+                                    This initiative is about more than just code, it's about commerce and connection. By
+                                    bringing local businesses online, we strengthen the economic fabric of our entire
+                                    nation.
                                 </p>
                             </div>
                         </div>
@@ -301,54 +434,73 @@
                 <!-- Name and Email -->
                 <div class="grid md:grid-cols-2 gap-6">
                     <div class="space-y-2">
-                        <label class="block text-sm font-semibold uppercase tracking-wide" style="color: #2C3333; opacity: 0.6;">Full Name</label>
-                        <input type="text" placeholder="Giorgi Petrov" class="w-full px-4 py-3 border border-neutral-300 focus:outline-none focus:ring-2 focus:ring-primary focus:border-transparent transition-all">
+                        <label class="block text-sm font-semibold uppercase tracking-wide"
+                            style="color: #2C3333; opacity: 0.6;">Full Name</label>
+                        <input type="text" placeholder="Giorgi Petrov"
+                            class="w-full px-4 py-3 border border-neutral-300 focus:outline-none focus:ring-2 focus:ring-primary focus:border-transparent transition-all">
                     </div>
                     <div class="space-y-2">
-                        <label class="block text-sm font-semibold uppercase tracking-wide" style="color: #2C3333; opacity: 0.6;">Email Address</label>
-                        <input type="email" placeholder="email@domain.ge" class="w-full px-4 py-3 border border-neutral-300 focus:outline-none focus:ring-2 focus:ring-primary focus:border-transparent transition-all">
+                        <label class="block text-sm font-semibold uppercase tracking-wide"
+                            style="color: #2C3333; opacity: 0.6;">Email Address</label>
+                        <input type="email" placeholder="email@domain.ge"
+                            class="w-full px-4 py-3 border border-neutral-300 focus:outline-none focus:ring-2 focus:ring-primary focus:border-transparent transition-all">
                     </div>
                 </div>
 
                 <!-- Business Name and Phone -->
                 <div class="grid md:grid-cols-2 gap-6">
                     <div class="space-y-2">
-                        <label class="block text-sm font-semibold uppercase tracking-wide" style="color: #2C3333; opacity: 0.6;">Business Name</label>
-                        <input type="text" placeholder="Name of your business" class="w-full px-4 py-3 border border-neutral-300 focus:outline-none focus:ring-2 focus:ring-primary focus:border-transparent transition-all">
+                        <label class="block text-sm font-semibold uppercase tracking-wide"
+                            style="color: #2C3333; opacity: 0.6;">Business Name</label>
+                        <input type="text" placeholder="Name of your business"
+                            class="w-full px-4 py-3 border border-neutral-300 focus:outline-none focus:ring-2 focus:ring-primary focus:border-transparent transition-all">
                     </div>
                     <div class="space-y-2">
-                        <label class="block text-sm font-semibold uppercase tracking-wide" style="color: #2C3333; opacity: 0.6;">Phone Number</label>
-                        <input type="tel" placeholder="+995" class="w-full px-4 py-3 border border-neutral-300 focus:outline-none focus:ring-2 focus:ring-primary focus:border-transparent transition-all">
+                        <label class="block text-sm font-semibold uppercase tracking-wide"
+                            style="color: #2C3333; opacity: 0.6;">Phone Number</label>
+                        <input type="tel" placeholder="+995"
+                            class="w-full px-4 py-3 border border-neutral-300 focus:outline-none focus:ring-2 focus:ring-primary focus:border-transparent transition-all">
                     </div>
                 </div>
 
                 <!-- Category -->
                 <div class="space-y-2">
-                    <label class="block text-sm font-semibold uppercase tracking-wide" style="color: #2C3333; opacity: 0.6;">Category</label>
-                    <input type="text" placeholder="Select your business category" class="w-full px-4 py-3 border border-neutral-300 focus:outline-none focus:ring-2 focus:ring-primary focus:border-transparent transition-all">
+                    <label class="block text-sm font-semibold uppercase tracking-wide"
+                        style="color: #2C3333; opacity: 0.6;">Category</label>
+                    <input type="text" placeholder="Select your business category"
+                        class="w-full px-4 py-3 border border-neutral-300 focus:outline-none focus:ring-2 focus:ring-primary focus:border-transparent transition-all">
                 </div>
 
                 <!-- Business Goals -->
                 <div class="space-y-2">
-                    <label class="block text-sm font-semibold uppercase tracking-wide" style="color: #2C3333; opacity: 0.6;">Describe Your Business Goals</label>
-                    <textarea rows="4" placeholder="Tell us about what you want to achieve online..." class="w-full px-4 py-3 border border-neutral-300 focus:outline-none focus:ring-2 focus:ring-primary focus:border-transparent transition-all resize-none"></textarea>
+                    <label class="block text-sm font-semibold uppercase tracking-wide"
+                        style="color: #2C3333; opacity: 0.6;">Describe Your Business Goals</label>
+                    <textarea rows="4" placeholder="Tell us about what you want to achieve online..."
+                        class="w-full px-4 py-3 border border-neutral-300 focus:outline-none focus:ring-2 focus:ring-primary focus:border-transparent transition-all resize-none"></textarea>
                 </div>
 
                 <!-- Websites You Love -->
                 <div class="space-y-2">
-                    <label class="block text-sm font-semibold uppercase tracking-wide" style="color: #2C3333; opacity: 0.6;">Are There Any Websites You Currently Love?</label>
-                    <textarea rows="3" placeholder="Provide links (URL) or inspiration" class="w-full px-4 py-3 border border-neutral-300 focus:outline-none focus:ring-2 focus:ring-primary focus:border-transparent transition-all resize-none"></textarea>
+                    <label class="block text-sm font-semibold uppercase tracking-wide"
+                        style="color: #2C3333; opacity: 0.6;">Are There Any Websites You Currently Love?</label>
+                    <textarea rows="3" placeholder="Provide links (URL) or inspiration"
+                        class="w-full px-4 py-3 border border-neutral-300 focus:outline-none focus:ring-2 focus:ring-primary focus:border-transparent transition-all resize-none"></textarea>
                 </div>
 
                 <!-- Visual Identity -->
                 <div class="space-y-2">
-                    <label class="block text-sm font-semibold uppercase tracking-wide" style="color: #2C3333; opacity: 0.6;">Does Your Business Have An Existing Visual Identity (Colors, Logos)?</label>
-                    <textarea rows="3" placeholder="If yes, what colors represent your brand? (e.g. describe your color logo, colors, etc.)" class="w-full px-4 py-3 border border-neutral-300 focus:outline-none focus:ring-2 focus:ring-primary focus:border-transparent transition-all resize-none"></textarea>
+                    <label class="block text-sm font-semibold uppercase tracking-wide"
+                        style="color: #2C3333; opacity: 0.6;">Does Your Business Have An Existing Visual Identity
+                        (Colors, Logos)?</label>
+                    <textarea rows="3"
+                        placeholder="If yes, what colors represent your brand? (e.g. describe your color logo, colors, etc.)"
+                        class="w-full px-4 py-3 border border-neutral-300 focus:outline-none focus:ring-2 focus:ring-primary focus:border-transparent transition-all resize-none"></textarea>
                 </div>
 
                 <!-- Submit Button -->
                 <div class="pt-4">
-                    <button type="submit" class="w-full px-8 py-5 bg-primary hover:bg-primary-dark text-white font-bold text-lg transition-all transform hover:scale-[1.02] shadow-lg hover:shadow-xl">
+                    <button type="submit"
+                        class="w-full px-8 py-5 bg-primary hover:bg-primary-dark text-white font-bold text-lg transition-all transform hover:scale-[1.02] shadow-lg hover:shadow-xl">
                         Submit Application
                     </button>
                     <p class="text-center text-sm text-neutral-500 mt-4">
@@ -367,10 +519,12 @@
                 <div class="space-y-4">
                     <div class="flex items-center space-x-2">
                         <div class="w-2 h-2 bg-primary rounded-full"></div>
-                        <span class="text-sm font-semibold uppercase tracking-wide" style="color: #2C3333; opacity: 0.6;">A Project<br>By Developers Alliance</span>
+                        <span class="text-sm font-semibold uppercase tracking-wide"
+                            style="color: #2C3333; opacity: 0.6;">A Project<br>By Developers Alliance</span>
                     </div>
                     <p class="text-sm leading-relaxed" style="color: #2C3333; opacity: 0.8;">
-                        Custom digital solutions and AI integrations created in the heart of Georgia. Helping the local economy breakthrough to the global marketplace.
+                        Custom digital solutions and AI integrations created in the heart of Georgia. Helping the local
+                        economy breakthrough to the global marketplace.
                     </p>
                 </div>
 
@@ -382,7 +536,8 @@
                 <!-- Right Column - Links -->
                 <div class="grid grid-cols-2 gap-8">
                     <div>
-                        <h5 class="font-semibold text-sm mb-4 uppercase tracking-wide" style="color: #2C3333; opacity: 0.6;">STUDIO</h5>
+                        <h5 class="font-semibold text-sm mb-4 uppercase tracking-wide"
+                            style="color: #2C3333; opacity: 0.6;">STUDIO</h5>
                         <ul class="space-y-2 text-sm" style="color: #2C3333; opacity: 0.8;">
                             <li><a href="#" class="hover:text-primary transition-colors">About us</a></li>
                             <li><a href="#" class="hover:text-primary transition-colors">Portfolio</a></li>
@@ -390,7 +545,8 @@
                         </ul>
                     </div>
                     <div>
-                        <h5 class="font-semibold text-sm mb-4 uppercase tracking-wide" style="color: #2C3333; opacity: 0.6;">CONNECT</h5>
+                        <h5 class="font-semibold text-sm mb-4 uppercase tracking-wide"
+                            style="color: #2C3333; opacity: 0.6;">CONNECT</h5>
                         <ul class="space-y-2 text-sm" style="color: #2C3333; opacity: 0.8;">
                             <li><a href="#" class="hover:text-primary transition-colors">LinkedIn</a></li>
                             <li><a href="#" class="hover:text-primary transition-colors">Instagram</a></li>
@@ -410,4 +566,5 @@
     </footer>
 
 </body>
+
 </html>
