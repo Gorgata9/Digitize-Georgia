@@ -181,6 +181,7 @@
 <body class="font-sans antialiased bg-neutral-50">
 
     <!-- Navigation -->
+    <!-- Navigation -->
     <nav class="fixed top-0 left-0 right-0 z-50 bg-white/95 backdrop-blur-sm border-b border-neutral-200">
         <div class="max-w-7xl mx-auto px-6 lg:px-8">
             <div class="flex items-center justify-between h-16">
@@ -188,6 +189,8 @@
                     <div class="w-2 h-2 bg-primary rounded-full"></div>
                     <span class="font-display font-bold text-xl text-neutral-900">Digitize Georgia</span>
                 </div>
+
+                <!-- Desktop Menu -->
                 <div class="hidden md:flex items-center space-x-8">
                     <a href="#about" class="text-sm text-neutral-600 hover:text-primary transition-colors">About Us</a>
                     <a href="#portfolio"
@@ -195,6 +198,29 @@
                     <a href="#contact" class="text-sm text-neutral-600 hover:text-primary transition-colors">Contact</a>
                     <button
                         class="flex items-center space-x-1 text-sm text-neutral-600 hover:text-primary transition-colors">
+                        <span>🌐</span>
+                        <span>GEO</span>
+                    </button>
+                </div>
+
+                <!-- Mobile Menu Button -->
+                <button id="mobile-menu-button" class="md:hidden p-2 text-neutral-600 hover:text-primary">
+                    <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                            d="M4 6h16M4 12h16M4 18h16"></path>
+                    </svg>
+                </button>
+            </div>
+
+            <!-- Mobile Menu -->
+            <div id="mobile-menu" class="hidden md:hidden pb-4">
+                <div class="flex flex-col space-y-4">
+                    <a href="#about" class="text-sm text-neutral-600 hover:text-primary transition-colors">About Us</a>
+                    <a href="#portfolio"
+                        class="text-sm text-neutral-600 hover:text-primary transition-colors">Portfolio</a>
+                    <a href="#contact" class="text-sm text-neutral-600 hover:text-primary transition-colors">Contact</a>
+                    <button
+                        class="flex items-center space-x-1 text-sm text-neutral-600 hover:text-primary transition-colors justify-start">
                         <span>🌐</span>
                         <span>GEO</span>
                     </button>
@@ -232,14 +258,18 @@
                     </p>
 
                     <div class="flex flex-wrap gap-4 pt-4">
-                        <button
-                            class="px-8 py-4 bg-primary hover:bg-primary-dark text-white font-semibold rounded-md transition-all transform hover:scale-105 shadow-lg hover:shadow-xl">
-                            Claim Your Free Website
-                        </button>
-                        <button
-                            class="px-8 py-4 border-2 border-neutral-300 hover:border-primary text-neutral-700 hover:text-primary font-semibold rounded-md transition-all">
-                            View our Portfolio
-                        </button>
+                        <a href="#contact">
+                            <button
+                                class="px-8 py-4 bg-primary hover:bg-primary-dark text-white font-semibold rounded-md transition-all transform hover:scale-105 shadow-lg hover:shadow-xl">
+                                Claim Your Free Website
+                            </button>
+                        </a>
+                        <a href="#portfolio">
+                            <button
+                                class="px-8 py-4 border-2 border-neutral-300 hover:border-primary text-neutral-700 hover:text-primary font-semibold rounded-md transition-all">
+                                View our Portfolio
+                            </button>
+                        </a>
                     </div>
                 </div>
             </div>
@@ -307,7 +337,7 @@
                 </div>
 
                 <!-- Feature 2 -->
-                <div class="flex flex-col h-full px-8 group border-r border-neutral-200">
+                <div class="flex flex-col h-full px-8 group border-r border-neutral-200 pt-12 md:pt-0">
                     <div class="flex-grow space-y-6 pb-8 min-h-[280px]">
                         <div class="flex items-center space-x-3">
                             <div
@@ -335,7 +365,7 @@
                 </div>
 
                 <!-- Feature 3 -->
-                <div class="flex flex-col h-full px-8 group">
+                <div class="flex flex-col h-full px-8 group pt-12 md:pt-0">
                     <div class="flex-grow space-y-6 pb-8 min-h-[280px]">
                         <div class="flex items-center space-x-3">
                             <div
@@ -364,7 +394,7 @@
     </section>
 
     <!-- Manifesto Section -->
-    <section class="py-20 lg:py-32 bg-white border-t border-b border-[#B91C1C]">
+    <section class="py-20 lg:py-32 bg-white border-t border-b border-[#B91C1C]" id="about">
         <div class="max-w-screen-2xl mx-auto px-6 lg:px-8">
             <div class="p-12 lg:p-16">
                 <div class="grid lg:grid-cols-2 gap-16 items-start">
@@ -467,8 +497,21 @@
                 <div class="space-y-2">
                     <label class="block text-sm font-semibold uppercase tracking-wide"
                         style="color: #2C3333; opacity: 0.6;">Category</label>
-                    <input type="text" placeholder="Select your business category"
-                        class="w-full px-4 py-3 border border-neutral-300 focus:outline-none focus:ring-2 focus:ring-primary focus:border-transparent transition-all">
+                    <select
+                        class="w-full px-4 py-3 border border-neutral-300 focus:outline-none focus:ring-2 focus:ring-primary focus:border-transparent transition-all bg-white"
+                        style="color: #2C3333; opacity: 0.6;">
+                        <option value="">Select your business category</option>
+                        <option value="restaurant">Restaurant / Café</option>
+                        <option value="hotel">Hotel / Guesthouse</option>
+                        <option value="winery">Winery / Wine Cellar</option>
+                        <option value="artisan">Artisan / Crafts</option>
+                        <option value="retail">Retail Shop</option>
+                        <option value="tourism">Tourism / Travel</option>
+                        <option value="agriculture">Agriculture / Farm</option>
+                        <option value="beauty">Beauty / Spa</option>
+                        <option value="professional">Professional Services</option>
+                        <option value="other">Other</option>
+                    </select>
                 </div>
 
                 <!-- Business Goals -->
@@ -690,6 +733,26 @@
         });
     </script>
 
+    <script>
+        // Mobile menu toggle
+        document.addEventListener('DOMContentLoaded', function () {
+            const mobileMenuButton = document.getElementById('mobile-menu-button');
+            const mobileMenu = document.getElementById('mobile-menu');
+
+            mobileMenuButton.addEventListener('click', function () {
+                mobileMenu.classList.toggle('hidden');
+            });
+
+            // Close mobile menu when clicking on a link
+            const mobileLinks = mobileMenu.querySelectorAll('a');
+            mobileLinks.forEach(link => {
+                link.addEventListener('click', function () {
+                    mobileMenu.classList.add('hidden');
+                });
+            });
+        });
+    </script>
+
     <!-- Footer -->
     <footer class="py-16" style="background-color: #F0F4F2;">
         <div class="max-w-7xl mx-auto px-6 lg:px-8">
@@ -718,18 +781,21 @@
                         <h5 class="font-semibold text-sm mb-4 uppercase tracking-wide"
                             style="color: #2C3333; opacity: 0.6;">STUDIO</h5>
                         <ul class="space-y-2 text-sm" style="color: #2C3333; opacity: 0.8;">
-                            <li><a href="#" class="hover:text-primary transition-colors">About us</a></li>
-                            <li><a href="#" class="hover:text-primary transition-colors">Portfolio</a></li>
-                            <li><a href="#" class="hover:text-primary transition-colors">Contact</a></li>
+                            <li><a href="#about" class="hover:text-primary transition-colors">About us</a></li>
+                            <li><a href="#portfolio" class="hover:text-primary transition-colors">Portfolio</a></li>
+                            <li><a href="#contact" class="hover:text-primary transition-colors">Contact</a></li>
                         </ul>
                     </div>
                     <div>
                         <h5 class="font-semibold text-sm mb-4 uppercase tracking-wide"
                             style="color: #2C3333; opacity: 0.6;">CONNECT</h5>
                         <ul class="space-y-2 text-sm" style="color: #2C3333; opacity: 0.8;">
-                            <li><a href="#" class="hover:text-primary transition-colors">LinkedIn</a></li>
-                            <li><a href="#" class="hover:text-primary transition-colors">Instagram</a></li>
-                            <li><a href="#" class="hover:text-primary transition-colors">Developers Alliance</a></li>
+                            <li><a href="https://www.linkedin.com/company/developers-alliance-com/"
+                                    class="hover:text-primary transition-colors">LinkedIn</a></li>
+                            <li><a href="https://www.instagram.com/certified_magento_developers/"
+                                    class="hover:text-primary transition-colors">Instagram</a></li>
+                            <li><a href="https://developers-alliance.com/"
+                                    class="hover:text-primary transition-colors">Developers Alliance</a></li>
                         </ul>
                     </div>
                 </div>
