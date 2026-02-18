@@ -1,0 +1,335 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio - Digitize Georgia</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;500;600;700;800;900&family=Inter:wght@300;400;500;600;700&display=swap"
+        rel="stylesheet">
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        primary: '#B91C1C',
+                        'primary-dark': '#991B1B',
+                    },
+                    fontFamily: {
+                        'display': ['Playfair Display', 'serif'],
+                        'sans': ['Inter', 'sans-serif'],
+                    },
+                }
+            }
+        }
+    </script>
+</head>
+
+<body class="font-sans antialiased bg-neutral-50">
+
+    <!-- Navigation -->
+    <nav class="fixed top-0 left-0 right-0 z-50 bg-white/95 backdrop-blur-sm border-b border-neutral-200">
+        <div class="max-w-7xl mx-auto px-6 lg:px-8">
+            <div class="flex items-center justify-between h-16">
+                <div class="flex items-center space-x-2">
+                    <div class="w-2 h-2 bg-primary rounded-full"></div>
+                    <a href="index.html">
+                        <span class="font-display font-bold text-xl text-neutral-900">Digitize Georgia</span>
+                    </a>
+                </div>
+                <div class="hidden md:flex items-center space-x-8">
+                    <a href="about.html" class="text-sm text-neutral-600 hover:text-primary transition-colors">About
+                        Us</a>
+                    <a href="portfolio.html"
+                        class="text-sm text-neutral-600 hover:text-primary transition-colors">Portfolio</a>
+                    <a href="index.html#contact"
+                        class="text-sm text-neutral-600 hover:text-primary transition-colors">Contact</a>
+                    <button
+                        class="flex items-center space-x-1 text-sm text-neutral-600 hover:text-primary transition-colors">
+                        <span>🌐</span>
+                        <span>GEO</span>
+                    </button>
+                </div>
+
+                <!-- Mobile Menu Button -->
+                <button id="mobile-menu-button" class="md:hidden p-2 text-neutral-600 hover:text-primary">
+                    <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                            d="M4 6h16M4 12h16M4 18h16"></path>
+                    </svg>
+                </button>
+            </div>
+
+            <!-- Mobile Menu -->
+            <div id="mobile-menu" class="hidden md:hidden pb-4">
+                <div class="flex flex-col space-y-4">
+                    <a href="index.html#about"
+                        class="text-sm text-neutral-600 hover:text-primary transition-colors">About Us</a>
+                    <a href="index.html#portfolio"
+                        class="text-sm text-neutral-600 hover:text-primary transition-colors">Portfolio</a>
+                    <a href="index.html#contact"
+                        class="text-sm text-neutral-600 hover:text-primary transition-colors">Contact</a>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section class="pt-32 pb-16 lg:pt-40 lg:pb-24 bg-white border-b border-neutral-200 border-b border-primary">
+        <div class="max-w-7xl mx-auto px-6 lg:px-8 text-center">
+            <p class="text-primary font-bold text-sm uppercase tracking-wider mb-4">COMPLETED WORKS</p>
+            <h1 class="font-display font-bold text-5xl lg:text-6xl text-neutral-900 mb-6">
+                Digitalize Georgia Portfolio
+            </h1>
+            <p class="text-neutral-600 text-lg max-w-3xl mx-auto leading-relaxed">
+                A premium showcase of our commitment to modernizing Georgia's local business landscape through bespoke,
+                high-performance web solutions.
+            </p>
+        </div>
+    </section>
+
+    <!-- Project 01 - Image Left -->
+    <section class="py-16 lg:py-24 bg-neutral-50 border-b border-primary">
+        <div class="max-w-7xl mx-auto px-6 lg:px-8">
+            <div class="grid lg:grid-cols-2 gap-12 items-center">
+                <!-- Left - Image -->
+                <div class="order-2 lg:order-1">
+                    <div class="bg-gradient-to-br from-teal-400 to-teal-600 p-12 rounded-2xl shadow-2xl">
+                        <img src="img/kobi.png" alt="Kobi Transport Website" class="w-full rounded-lg shadow-xl">
+                    </div>
+                </div>
+
+                <!-- Right - Content -->
+                <div class="space-y-6 order-1 lg:order-2">
+                    <div>
+                        <p class="text-primary font-bold text-sm uppercase tracking-wider mb-2">PROJECT 01</p>
+                        <h2 class="font-display font-bold text-4xl lg:text-5xl text-neutral-900 mb-4">
+                            Kobi Transport
+                        </h2>
+                    </div>
+
+                    <div>
+                        <p class="text-neutral-500 font-semibold text-xs uppercase tracking-wider mb-2">MISSION</p>
+                        <p class="text-neutral-600 leading-relaxed">
+                            Creating a modern digital presence for one of Tbilisi's leading transportation companies.
+                            The goal was to establish trust with potential clients while showcasing their fleet and
+                            services through an elegant, easy-to-navigate platform.
+                        </p>
+                    </div>
+
+                    <div>
+                        <p class="text-neutral-500 font-semibold text-xs uppercase tracking-wider mb-3">DESIGN
+                            HIGHLIGHTS</p>
+                        <div class="grid md:grid-cols-2 gap-3">
+                            <ul class="space-y-2 text-sm text-neutral-600">
+                                <li class="flex items-start">
+                                    <span class="text-primary mr-2">•</span>
+                                    <span>Custom Typography</span>
+                                </li>
+                                <li class="flex items-start">
+                                    <span class="text-primary mr-2">•</span>
+                                    <span>Minimalist Navigation</span>
+                                </li>
+                            </ul>
+                            <ul class="space-y-2 text-sm text-neutral-600">
+                                <li class="flex items-start">
+                                    <span class="text-primary mr-2">•</span>
+                                    <span>Optimized Performance</span>
+                                </li>
+                                <li class="flex items-start">
+                                    <span class="text-primary mr-2">•</span>
+                                    <span>Responsive Layout</span>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+
+                    <a href="#"
+                        class="inline-flex items-center text-primary font-semibold hover:text-primary-dark transition-colors group">
+                        <span>View Live Site</span>
+                        <svg class="w-5 h-5 ml-2 transform group-hover:translate-x-1 transition-transform" fill="none"
+                            stroke="currentColor" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                d="M17 8l4 4m0 0l-4 4m4-4H3">
+                            </path>
+                        </svg>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Project 02 - Image Right -->
+    <section class="py-16 lg:py-24 bg-white border-t border-neutral-200">
+        <div class="max-w-7xl mx-auto px-6 lg:px-8">
+            <div class="grid lg:grid-cols-2 gap-12 items-center">
+                <!-- Left - Content -->
+                <div class="space-y-6">
+                    <div>
+                        <p class="text-primary font-bold text-sm uppercase tracking-wider mb-2">PROJECT 02</p>
+                        <h2 class="font-display font-bold text-4xl lg:text-5xl text-neutral-900 mb-4">
+                            Dialogi Wine
+                        </h2>
+                    </div>
+
+                    <div>
+                        <p class="text-neutral-500 font-semibold text-xs uppercase tracking-wider mb-2">MISSION</p>
+                        <p class="text-neutral-600 leading-relaxed">
+                            Bringing Georgian winemaking tradition into the digital age. This boutique winery needed an
+                            online presence that reflected the elegance and heritage of their artisanal wines while
+                            making it easy for customers to explore and order.
+                        </p>
+                    </div>
+
+                    <div>
+                        <p class="text-neutral-500 font-semibold text-xs uppercase tracking-wider mb-3">DESIGN
+                            HIGHLIGHTS</p>
+                        <div class="grid md:grid-cols-2 gap-3">
+                            <ul class="space-y-2 text-sm text-neutral-600">
+                                <li class="flex items-start">
+                                    <span class="text-primary mr-2">•</span>
+                                    <span>Monochromatic Theme</span>
+                                </li>
+                                <li class="flex items-start">
+                                    <span class="text-primary mr-2">•</span>
+                                    <span>E-commerce Ready</span>
+                                </li>
+                            </ul>
+                            <ul class="space-y-2 text-sm text-neutral-600">
+                                <li class="flex items-start">
+                                    <span class="text-primary mr-2">•</span>
+                                    <span>High-Res Image Grid</span>
+                                </li>
+                                <li class="flex items-start">
+                                    <span class="text-primary mr-2">•</span>
+                                    <span>Smooth Transitions</span>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+
+                    <a href="#"
+                        class="inline-flex items-center text-primary font-semibold hover:text-primary-dark transition-colors group">
+                        <span>View Live Site</span>
+                        <svg class="w-5 h-5 ml-2 transform group-hover:translate-x-1 transition-transform" fill="none"
+                            stroke="currentColor" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                d="M17 8l4 4m0 0l-4 4m4-4H3">
+                            </path>
+                        </svg>
+                    </a>
+                </div>
+
+                <!-- Right - Image -->
+                <div>
+                    <div class="bg-gradient-to-br from-stone-100 to-stone-200 p-12 rounded-2xl shadow-2xl">
+                        <img src="img/dialogi.png" alt="Dialogi Wine Website" class="w-full rounded-lg shadow-xl">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- CTA Section -->
+    <section class="py-20 lg:py-32 bg-primary text-white">
+        <div class="max-w-4xl mx-auto px-6 lg:px-8 text-center">
+            <h2 class="font-display font-bold text-4xl lg:text-5xl mb-6">
+                Want to be our next project?
+            </h2>
+            <p class="text-white/90 text-lg mb-8 max-w-2xl mx-auto">
+                We offer a limited number of free digitalization packages for qualifying Georgian businesses every
+                quarter.
+            </p>
+            <a href="index.html#contact"
+                class="inline-block px-10 py-4 bg-white text-primary font-bold text-lg hover:bg-neutral-100 transition-all transform hover:scale-105 shadow-xl rounded-lg">
+                Apply for Digitalization
+            </a>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="py-16" style="background-color: #F0F4F2;">
+        <div class="max-w-7xl mx-auto px-6 lg:px-8">
+            <div class="grid md:grid-cols-3 gap-12 pb-12 border-b border-neutral-300">
+                <!-- Left Column -->
+                <div class="space-y-4">
+                    <div class="space-y-3">
+                        <div class="flex items-center space-x-2">
+                            <div class="w-2 h-2 bg-primary rounded-full"></div>
+                            <span class="text-sm font-semibold uppercase tracking-wide"
+                                style="color: #2C3333; opacity: 0.6;">A Project By</span>
+                        </div>
+                        <img src="img/logo_black.png" alt="Developers Alliance" class="h-12 ml-4">
+                    </div>
+                    <p class="text-sm leading-relaxed" style="color: #2C3333; opacity: 0.8;">
+                        Custom digital solutions and AI integrations created in the heart of Georgia. Helping the local
+                        economy breakthrough to the global marketplace.
+                    </p>
+                </div>
+
+                <!-- Middle Column - Empty -->
+                <div></div>
+
+                <!-- Right Column - Links -->
+                <div class="grid grid-cols-2 gap-8">
+                    <div>
+                        <h5 class="font-semibold text-sm mb-4 uppercase tracking-wide"
+                            style="color: #2C3333; opacity: 0.6;">STUDIO</h5>
+                        <ul class="space-y-2 text-sm" style="color: #2C3333; opacity: 0.8;">
+                            <li><a href="about.html" class="hover:text-primary transition-colors">About us</a></li>
+                            <li><a href="portfolio.html" class="hover:text-primary transition-colors">Portfolio</a></li>
+                            <li><a href="index.html#contact" class="hover:text-primary transition-colors">Contact</a>
+                            </li>
+                        </ul>
+                    </div>
+                    <div>
+                        <h5 class="font-semibold text-sm mb-4 uppercase tracking-wide"
+                            style="color: #2C3333; opacity: 0.6;">CONNECT</h5>
+                        <ul class="space-y-2 text-sm" style="color: #2C3333; opacity: 0.8;">
+                            <li><a href="https://www.linkedin.com/company/developers-alliance-com/"
+                                    class="hover:text-primary transition-colors">LinkedIn</a></li>
+                            <li><a href="https://www.instagram.com/certified_magento_developers/"
+                                    class="hover:text-primary transition-colors">Instagram</a></li>
+                            <li><a href="https://developers-alliance.com/"
+                                    class="hover:text-primary transition-colors">Developers Alliance</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Copyright -->
+            <div class="pt-8">
+                <p class="text-xs" style="color: #2C3333; opacity: 0.6;">
+                    © 2026 Developers Alliance. Tbilisi, Georgia.
+                </p>
+            </div>
+        </div>
+    </footer>
+
+    <script>
+        // Mobile menu toggle
+        document.addEventListener('DOMContentLoaded', function () {
+            const mobileMenuButton = document.getElementById('mobile-menu-button');
+            const mobileMenu = document.getElementById('mobile-menu');
+
+            mobileMenuButton.addEventListener('click', function () {
+                mobileMenu.classList.toggle('hidden');
+            });
+
+            // Close mobile menu when clicking on a link
+            const mobileLinks = mobileMenu.querySelectorAll('a');
+            mobileLinks.forEach(link => {
+                link.addEventListener('click', function () {
+                    mobileMenu.classList.add('hidden');
+                });
+            });
+        });
+    </script>
+
+</body>
+
+</html>
