@@ -1,0 +1,376 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About Us - Digitize Georgia</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;500;600;700;800;900&family=Inter:wght@300;400;500;600;700&display=swap"
+        rel="stylesheet">
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        primary: '#B91C1C',
+                        'primary-dark': '#991B1B',
+                    },
+                    fontFamily: {
+                        'display': ['Playfair Display', 'serif'],
+                        'sans': ['Inter', 'sans-serif'],
+                    },
+                }
+            }
+        }
+    </script>
+</head>
+
+<body class="font-sans antialiased bg-neutral-50">
+
+    <!-- Navigation -->
+    <nav class="fixed top-0 left-0 right-0 z-50 bg-white/95 backdrop-blur-sm border-b border-neutral-200">
+        <div class="max-w-7xl mx-auto px-6 lg:px-8">
+            <div class="flex items-center justify-between h-16">
+                <div class="flex items-center space-x-2">
+                    <div class="w-2 h-2 bg-primary rounded-full"></div>
+                    <a href="index.html">
+                        <span class="font-display font-bold text-xl text-neutral-900">Digitize Georgia</span>
+                    </a>
+                </div>
+                <div class="hidden md:flex items-center space-x-8">
+                    <a href="about.html" class="text-sm text-neutral-600 hover:text-primary transition-colors">About
+                        Us</a>
+                    <a href="portfolio.html"
+                        class="text-sm text-neutral-600 hover:text-primary transition-colors">Portfolio</a>
+                    <a href="index.html#contact"
+                        class="text-sm text-neutral-600 hover:text-primary transition-colors">Contact</a>
+                    <button
+                        class="flex items-center space-x-1 text-sm text-neutral-600 hover:text-primary transition-colors">
+                        <span>🌐</span>
+                        <span>GEO</span>
+                    </button>
+                </div>
+
+                <!-- Mobile Menu Button -->
+                <button id="mobile-menu-button" class="md:hidden p-2 text-neutral-600 hover:text-primary">
+                    <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                            d="M4 6h16M4 12h16M4 18h16"></path>
+                    </svg>
+                </button>
+            </div>
+
+            <!-- Mobile Menu -->
+            <div id="mobile-menu" class="hidden md:hidden pb-4">
+                <div class="flex flex-col space-y-4">
+                    <a href="index.html#about"
+                        class="text-sm text-neutral-600 hover:text-primary transition-colors">About Us</a>
+                    <a href="index.html#portfolio"
+                        class="text-sm text-neutral-600 hover:text-primary transition-colors">Portfolio</a>
+                    <a href="index.html#contact"
+                        class="text-sm text-neutral-600 hover:text-primary transition-colors">Contact</a>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section class="pt-32 pb-16 lg:pt-40 lg:pb-24 bg-white border-b border-primary">
+        <div class="max-w-7xl mx-auto px-6 lg:px-8">
+            <div class="grid lg:grid-cols-2 gap-12 items-start">
+                <!-- Left - Logo and Title -->
+                <div class="space-y-6 border-l-4 border-primary pl-6">
+                    <img src="img/logo_black.png" alt="Developers Alliance" class="h-24 mb-8">
+                    <h1 class="font-display font-bold text-2xl text-neutral-900 uppercase tracking-wide">
+                        DIGITIZE GEORGIA PROJECT
+                    </h1>
+                </div>
+
+                <!-- Right - Description -->
+                <div class="space-y-4">
+                    <p class="text-neutral-600 leading-relaxed">
+                        Digitize Georgia is an initiative dedicated to empowering local businesses across the country by
+                        providing professional web presence at zero cost. We believe that every Georgian entrepreneur,
+                        from the mountains of Svaneti to the vineyards of Kakheti, deserves access to world-class
+                        digital tools.
+                    </p>
+                    <p class="text-neutral-600 leading-relaxed">
+                        Our mission goes beyond building websites. We're creating a digital ecosystem where traditional
+                        craftsmanship meets modern technology, where family businesses can reach global audiences, and
+                        where the spirit of Georgian hospitality shines through every pixel.
+                    </p>
+                    <p class="text-neutral-600 leading-relaxed">
+                        By removing the financial and technical barriers to online presence, we're not just helping
+                        individual businesses grow — we're strengthening the entire Georgian economy, one home page at a
+                        time.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Team Images Section -->
+    <section class="py-16 lg:py-24 bg-neutral-50 border-b border-primary">
+        <div class="max-w-7xl mx-auto px-6 lg:px-8">
+            <div class="grid md:grid-cols-2 gap-8">
+                <!-- Large Image Left -->
+                <div class="md:row-span-2">
+                    <img src="https://images.unsplash.com/photo-1522071820081-009f0129c71c?w=800&h=1000&fit=crop"
+                        alt="Team collaboration" class="w-full h-full object-cover rounded-lg">
+                </div>
+
+                <!-- Two Smaller Images Right -->
+                <div>
+                    <img src="https://images.unsplash.com/photo-1531482615713-2afd69097998?w=800&h=500&fit=crop"
+                        alt="Team working" class="w-full h-full object-cover rounded-lg">
+                </div>
+                <div>
+                    <img src="https://images.unsplash.com/photo-1556761175-b413da4baf72?w=800&h=500&fit=crop"
+                        alt="Team meeting" class="w-full h-full object-cover rounded-lg">
+                </div>
+            </div>
+
+            <!-- Caption -->
+            <div class="mt-8 text-center">
+                <p class="text-neutral-600 text-sm italic">
+                    A diverse collective of developers and designers working in harmony to redefine Georgia's digital
+                    landscape.
+                </p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Team Members Section -->
+    <section class="py-16 lg:py-24 bg-white border-b border-primary">
+        <div class="max-w-4xl mx-auto px-6 lg:px-8 space-y-16">
+            <!-- Member 1 - Left aligned -->
+            <div class="flex flex-col md:flex-row gap-8 items-start">
+                <div class="flex-shrink-0">
+                    <img src="https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?w=150&h=150&fit=crop"
+                        alt="Oskars" class="w-32 h-32 rounded-full object-cover border-4 border-white shadow-lg">
+                </div>
+                <div class="space-y-3 flex-1">
+                    <div>
+                        <p class="text-primary font-bold text-sm uppercase tracking-wider">PROJECT LEAD</p>
+                        <h3 class="font-display font-bold text-2xl text-neutral-900">OSKARS</h3>
+                    </div>
+                    <p class="text-neutral-600 leading-relaxed">
+                        With over a decade of experience in digital transformation, Oskars leads the Digitize Georgia
+                        initiative with a vision to make technology accessible to every business. His expertise in
+                        project management and deep understanding of Georgian business culture make him the perfect
+                        bridge between tradition and innovation.
+                    </p>
+                    <a href="https://www.linkedin.com" target="_blank"
+                        class="inline-block text-primary hover:text-primary-dark transition-colors">
+                        <svg class="w-6 h-6" fill="currentColor" viewBox="0 0 24 24">
+                            <path
+                                d="M19 0h-14c-2.761 0-5 2.239-5 5v14c0 2.761 2.239 5 5 5h14c2.762 0 5-2.239 5-5v-14c0-2.761-2.238-5-5-5zm-11 19h-3v-11h3v11zm-1.5-12.268c-.966 0-1.75-.79-1.75-1.764s.784-1.764 1.75-1.764 1.75.79 1.75 1.764-.783 1.764-1.75 1.764zm13.5 12.268h-3v-5.604c0-3.368-4-3.113-4 0v5.604h-3v-11h3v1.765c1.396-2.586 7-2.777 7 2.476v6.759z" />
+                        </svg>
+                    </a>
+                </div>
+            </div>
+
+            <!-- Member 2 - Right aligned -->
+            <div class="flex flex-col md:flex-row-reverse gap-8 items-start">
+                <div class="flex-shrink-0">
+                    <img src="https://images.unsplash.com/photo-1539571696357-5a69c17a67c6?w=150&h=150&fit=crop"
+                        alt="Shawn" class="w-32 h-32 rounded-full object-cover border-4 border-white shadow-lg">
+                </div>
+                <div class="space-y-3 flex-1 md:text-right">
+                    <div>
+                        <p class="text-primary font-bold text-sm uppercase tracking-wider">DIGITAL STRATEGIST</p>
+                        <h3 class="font-display font-bold text-2xl text-neutral-900">SHAWN</h3>
+                    </div>
+                    <p class="text-neutral-600 leading-relaxed">
+                        Shawn brings a wealth of knowledge in digital marketing and user experience design. His
+                        strategic approach ensures that every website we create not only looks beautiful but also drives
+                        real business results. He's passionate about helping Georgian businesses tell their unique
+                        stories online.
+                    </p>
+                    <div class="md:flex md:justify-end">
+                        <a href="https://www.linkedin.com" target="_blank"
+                            class="inline-block text-primary hover:text-primary-dark transition-colors">
+                            <svg class="w-6 h-6" fill="currentColor" viewBox="0 0 24 24">
+                                <path
+                                    d="M19 0h-14c-2.761 0-5 2.239-5 5v14c0 2.761 2.239 5 5 5h14c2.762 0 5-2.239 5-5v-14c0-2.761-2.238-5-5-5zm-11 19h-3v-11h3v11zm-1.5-12.268c-.966 0-1.75-.79-1.75-1.764s.784-1.764 1.75-1.764 1.75.79 1.75 1.764-.783 1.764-1.75 1.764zm13.5 12.268h-3v-5.604c0-3.368-4-3.113-4 0v5.604h-3v-11h3v1.765c1.396-2.586 7-2.777 7 2.476v6.759z" />
+                            </svg>
+                        </a>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Member 3 - Left aligned -->
+            <div class="flex flex-col md:flex-row gap-8 items-start">
+                <div class="flex-shrink-0">
+                    <img src="https://images.unsplash.com/photo-1519085360753-af0119f7cbe7?w=150&h=150&fit=crop"
+                        alt="Giorgi" class="w-32 h-32 rounded-full object-cover border-4 border-white shadow-lg">
+                </div>
+                <div class="space-y-3 flex-1">
+                    <div>
+                        <p class="text-primary font-bold text-sm uppercase tracking-wider">WEB DESIGNER</p>
+                        <h3 class="font-display font-bold text-2xl text-neutral-900">GIORGI</h3>
+                    </div>
+                    <p class="text-neutral-600 leading-relaxed">
+                        A talented designer with an eye for detail, Giorgi crafts every website with care and
+                        creativity. He specializes in creating custom designs that reflect the unique character of each
+                        business. His work combines modern design principles with elements that celebrate Georgian
+                        culture and aesthetics.
+                    </p>
+                    <a href="https://www.linkedin.com" target="_blank"
+                        class="inline-block text-primary hover:text-primary-dark transition-colors">
+                        <svg class="w-6 h-6" fill="currentColor" viewBox="0 0 24 24">
+                            <path
+                                d="M19 0h-14c-2.761 0-5 2.239-5 5v14c0 2.761 2.239 5 5 5h14c2.762 0 5-2.239 5-5v-14c0-2.761-2.238-5-5-5zm-11 19h-3v-11h3v11zm-1.5-12.268c-.966 0-1.75-.79-1.75-1.764s.784-1.764 1.75-1.764 1.75.79 1.75 1.764-.783 1.764-1.75 1.764zm13.5 12.268h-3v-5.604c0-3.368-4-3.113-4 0v5.604h-3v-11h3v1.765c1.396-2.586 7-2.777 7 2.476v6.759z" />
+                        </svg>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Organization Section -->
+    <section class="py-16 lg:py-24 bg-neutral-50 border-b border-primary">
+        <div class="max-w-7xl mx-auto px-6 lg:px-8">
+            <div class="grid lg:grid-cols-2 gap-12 items-center">
+                <!-- Left - Image with Badge -->
+                <div class="relative">
+                    <img src="https://images.unsplash.com/photo-1486406146926-c627a92ad1ab?w=800&h=600&fit=crop"
+                        alt="Developers Alliance Office" class="w-full h-96 object-cover rounded-lg">
+
+                    <!-- Badge -->
+                    <div
+                        class="absolute -bottom-8 -right-8 bg-primary text-white p-8 shadow-2xl transform rotate-3 hover:rotate-0 transition-transform rounded-lg">
+                        <div class="text-center">
+                            <p class="text-5xl font-display font-bold">15+</p>
+                            <p class="text-xs uppercase tracking-wider mt-2">Years<br>Of Excellence</p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Right - Content -->
+                <div class="space-y-6">
+                    <div>
+                        <p class="text-primary font-bold text-sm uppercase tracking-wider mb-2">THE ORGANIZATION</p>
+                        <h2 class="font-display font-bold text-4xl text-neutral-900 mb-6">Developers Alliance</h2>
+                    </div>
+
+                    <p class="text-neutral-600 leading-relaxed">
+                        Developers Alliance is a leading technology company based in Tbilisi, Georgia, with over 15
+                        years of experience in web development, digital solutions, and AI integrations. We've
+                        successfully delivered hundreds of projects for clients worldwide, from startups to enterprise
+                        corporations.
+                    </p>
+
+                    <p class="text-neutral-600 leading-relaxed">
+                        The Digitize Georgia project represents our commitment to giving back to the community that has
+                        supported us throughout our journey. We believe that by empowering local businesses with
+                        professional digital presence, we're investing in Georgia's future.
+                    </p>
+
+                    <p class="text-neutral-600 leading-relaxed">
+                        Our team combines technical expertise with a deep understanding of Georgian culture and business
+                        practices, ensuring that every website we create resonates with local audiences while meeting
+                        international standards.
+                    </p>
+
+                    <a href="https://developers-alliance.com/case-studies.html" target="_blank"
+                        class="inline-flex items-center text-primary font-semibold hover:text-primary-dark transition-colors group">
+                        <span>Corporate Portfolio</span>
+                        <svg class="w-5 h-5 ml-2 transform group-hover:translate-x-1 transition-transform" fill="none"
+                            stroke="currentColor" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                d="M17 8l4 4m0 0l-4 4m4-4H3">
+                            </path>
+                        </svg>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="py-16" style="background-color: #F0F4F2;">
+        <div class="max-w-7xl mx-auto px-6 lg:px-8">
+            <div class="grid md:grid-cols-3 gap-12 pb-12 border-b border-neutral-300">
+                <!-- Left Column -->
+                <div class="space-y-4">
+                    <div class="space-y-3">
+                        <div class="flex items-center space-x-2">
+                            <div class="w-2 h-2 bg-primary rounded-full"></div>
+                            <span class="text-sm font-semibold uppercase tracking-wide"
+                                style="color: #2C3333; opacity: 0.6;">A Project By</span>
+                        </div>
+                        <img src="img/logo_black.png" alt="Developers Alliance" class="h-12 ml-4">
+                    </div>
+                    <p class="text-sm leading-relaxed" style="color: #2C3333; opacity: 0.8;">
+                        Custom digital solutions and AI integrations created in the heart of Georgia. Helping the local
+                        economy breakthrough to the global marketplace.
+                    </p>
+                </div>
+
+                <!-- Middle Column - Empty -->
+                <div></div>
+
+                <!-- Right Column - Links -->
+                <div class="grid grid-cols-2 gap-8">
+                    <div>
+                        <h5 class="font-semibold text-sm mb-4 uppercase tracking-wide"
+                            style="color: #2C3333; opacity: 0.6;">STUDIO</h5>
+                        <ul class="space-y-2 text-sm" style="color: #2C3333; opacity: 0.8;">
+                            <li><a href="about.html" class="hover:text-primary transition-colors">About us</a></li>
+                            <li><a href="portfolio.html" class="hover:text-primary transition-colors">Portfolio</a></li>
+                            <li><a href="index.html#contact" class="hover:text-primary transition-colors">Contact</a>
+                            </li>
+                        </ul>
+                    </div>
+                    <div>
+                        <h5 class="font-semibold text-sm mb-4 uppercase tracking-wide"
+                            style="color: #2C3333; opacity: 0.6;">CONNECT</h5>
+                        <ul class="space-y-2 text-sm" style="color: #2C3333; opacity: 0.8;">
+                            <li><a href="https://www.linkedin.com/company/developers-alliance-com/"
+                                    class="hover:text-primary transition-colors">LinkedIn</a></li>
+                            <li><a href="https://www.instagram.com/certified_magento_developers/"
+                                    class="hover:text-primary transition-colors">Instagram</a></li>
+                            <li><a href="https://developers-alliance.com/"
+                                    class="hover:text-primary transition-colors">Developers Alliance</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Copyright -->
+            <div class="pt-8">
+                <p class="text-xs" style="color: #2C3333; opacity: 0.6;">
+                    © 2026 Developers Alliance. Tbilisi, Georgia.
+                </p>
+            </div>
+        </div>
+    </footer>
+
+    <script>
+        // Mobile menu toggle
+        document.addEventListener('DOMContentLoaded', function () {
+            const mobileMenuButton = document.getElementById('mobile-menu-button');
+            const mobileMenu = document.getElementById('mobile-menu');
+
+            mobileMenuButton.addEventListener('click', function () {
+                mobileMenu.classList.toggle('hidden');
+            });
+
+            // Close mobile menu when clicking on a link
+            const mobileLinks = mobileMenu.querySelectorAll('a');
+            mobileLinks.forEach(link => {
+                link.addEventListener('click', function () {
+                    mobileMenu.classList.add('hidden');
+                });
+            });
+        });
+    </script>
+
+</body>
+
+</html>
