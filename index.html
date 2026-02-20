@@ -9,7 +9,7 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link
-        href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;500;600;700;800;900&family=Inter:wght@300;400;500;600;700&display=swap"
+        href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700;800;900&family=Open+Sans:ital,wght@0,300;0,400;0,500;0,600;0,700;1,400&display=swap"
         rel="stylesheet">
     <script type="application/ld+json">
     {
@@ -148,13 +148,24 @@
                         'primary-dark': '#991B1B',
                     },
                     fontFamily: {
-                        'display': ['Playfair Display', 'serif'],
-                        'sans': ['Inter', 'sans-serif'],
+                        'sans': ['"Open Sans"', 'sans-serif'],
+                        'heading': ['Montserrat', 'sans-serif'],
                     },
                 }
             }
         }
     </script>
+    <style type="text/tailwindcss">
+        @layer base {
+            body {
+                @apply font-sans antialiased bg-neutral-50 text-neutral-600;
+            }
+            
+            h1, h2, h3, h4, h5, h6 {
+                @apply font-heading font-bold text-neutral-900;
+            }
+        }
+    </style>
     <style>
         @keyframes fadeInUp {
             from {
@@ -237,15 +248,16 @@
         <div class="max-w-7xl mx-auto px-6 lg:px-8">
             <div class="flex items-center justify-between h-16">
                 <div class="flex items-center space-x-2">
-                    <div class="w-2 h-2 bg-primary rounded-full"></div>
-                    <a href="index.html">
-                        <span class="font-display font-bold text-xl text-neutral-900">Digitize Georgia</span>
+                    <a href="index.html" class="flex items-center">
+                        <img src="img/logo_top.png" alt="Digitize Georgia Logo"
+                            class="h-8 md:h-10 w-auto object-contain">
                     </a>
                 </div>
 
                 <!-- Desktop Menu -->
                 <div class="hidden md:flex items-center space-x-8">
-                    <a href="about.html" class="text-sm text-neutral-600 hover:text-primary transition-colors">About Us</a>
+                    <a href="about.html" class="text-sm text-neutral-600 hover:text-primary transition-colors">About
+                        Us</a>
                     <a href="portfolio.html"
                         class="text-sm text-neutral-600 hover:text-primary transition-colors">Portfolio</a>
                     <a href="#contact" class="text-sm text-neutral-600 hover:text-primary transition-colors">Contact</a>
@@ -268,7 +280,8 @@
             <!-- Mobile Menu -->
             <div id="mobile-menu" class="hidden md:hidden pb-4">
                 <div class="flex flex-col space-y-4">
-                    <a href="about.html" class="text-sm text-neutral-600 hover:text-primary transition-colors">About Us</a>
+                    <a href="about.html" class="text-sm text-neutral-600 hover:text-primary transition-colors">About
+                        Us</a>
                     <a href="portfolio.html"
                         class="text-sm text-neutral-600 hover:text-primary transition-colors">Portfolio</a>
                     <a href="#contact" class="text-sm text-neutral-600 hover:text-primary transition-colors">Contact</a>
@@ -301,13 +314,13 @@
                     <div>
                         <h1
                             class="font-display font-bold text-5xl lg:text-6xl xl:text-7xl text-neutral-900 leading-tight">
-                            Helping Georgian Businesses <span class="text-primary">Grow</span> by Getting Online
+                            Get Found. <span class="text-primary">Grow.</span> Deliver.
                         </h1>
                     </div>
 
                     <p class="text-lg text-neutral-600 leading-relaxed max-w-xl">
-                        We build your first home page at zero cost. This empowers you and the Georgian local economy to
-                        flourish in the digital age of ecommerce, one craft at a time.
+                        We help Georgian businesses grow by getting them online, free. Make sure your business is found
+                        online so you can focus on what you do best.
                     </p>
 
                     <div class="flex flex-wrap gap-4 pt-4">
@@ -338,7 +351,7 @@
                     <div class="pl-6 border-t border-primary pt-8 lg:border-t-0 lg:pt-0">
                         <p class="text-sm font-semibold text-primary uppercase tracking-wider mb-4">PHILOSOPHY</p>
                         <h2 class="font-display font-bold text-4xl lg:text-5xl text-neutral-900 leading-tight">
-                            Growth through digital <span class="italic text-primary">presence.</span>
+                            Get found online.<span class="italic text-primary"> Be seen offline.</span>
                         </h2>
                     </div>
 
