@@ -1,0 +1,406 @@
+<!DOCTYPE html>
+<html lang="ka" class="scroll-smooth">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>როგორ მუშაობს - გააციფრულე საქართველო</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;500;600;700;800;900&family=Inter:wght@300;400;500;600;700&display=swap"
+        rel="stylesheet">
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        primary: '#B91C1C',
+                        'primary-dark': '#991B1B',
+                    },
+                    fontFamily: {
+                        'display': ['Playfair Display', 'serif'],
+                        'sans': ['Inter', 'sans-serif'],
+                    },
+                }
+            }
+        }
+    </script>
+</head>
+
+<body class="font-sans antialiased bg-neutral-50">
+
+    <nav class="fixed top-0 left-0 right-0 z-50 bg-white/95 backdrop-blur-sm border-b border-neutral-200">
+        <div class="max-w-7xl mx-auto px-6 lg:px-8">
+            <div class="flex items-center justify-between h-16">
+                <div class="flex items-center space-x-2">
+                    <a href="index.html" class="flex items-center">
+                        <img src="../img/logo_top.png" alt="Digitize Georgia Logo"
+                            class="h-10 md:h-12 w-auto object-contain">
+                    </a>
+                </div>
+                <div class="hidden md:flex items-center space-x-8">
+                    <a href="about.html" class="text-sm text-neutral-600 hover:text-primary transition-colors">ჩვენ
+                        შესახებ</a>
+                    <a href="portfolio.html"
+                        class="text-sm text-neutral-600 hover:text-primary transition-colors">პორტფოლიო</a>
+                    <a href="how_it_works.html"
+                        class="text-sm text-neutral-600 hover:text-primary transition-colors">როგორ მუშაობს</a>
+                    <a href="index.html#contact"
+                        class="text-sm text-neutral-600 hover:text-primary transition-colors">კონტაქტი</a>
+                    <a href="../how_it_works.html">
+                        <button
+                            class="flex items-center space-x-1 text-sm text-neutral-600 hover:text-primary transition-colors">
+                            <span>🌐</span>
+                            <span>ENG</span>
+                        </button>
+                    </a>
+                </div>
+
+                <button id="mobile-menu-button" class="md:hidden p-2 text-neutral-600 hover:text-primary">
+                    <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                            d="M4 6h16M4 12h16M4 18h16"></path>
+                    </svg>
+                </button>
+            </div>
+
+            <div id="mobile-menu" class="hidden md:hidden pb-4">
+                <div class="flex flex-col space-y-4">
+                    <a href="about.html" class="text-sm text-neutral-600 hover:text-primary transition-colors">ჩვენ
+                        შესახებ</a>
+                    <a href="portfolio.html"
+                        class="text-sm text-neutral-600 hover:text-primary transition-colors">პორტფოლიო</a>
+                    <a href="how_it_works.html"
+                        class="text-sm text-neutral-600 hover:text-primary transition-colors">როგორ მუშაობს</a>
+                    <a href="index.html#contact"
+                        class="text-sm text-neutral-600 hover:text-primary transition-colors">კონტაქტი</a>
+                    <a href="../how_it_works.html">
+                        <button
+                            class="flex items-center space-x-1 text-sm text-neutral-600 hover:text-primary transition-colors justify-start">
+                            <span>🌐</span>
+                            <span>ENG</span>
+                        </button>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <section class="pt-32 pb-16 lg:pt-40 lg:pb-24 bg-white border-b border-primary">
+        <div class="max-w-7xl mx-auto px-6 lg:px-8 text-center">
+            <p class="text-sm font-semibold text-primary uppercase tracking-wider mb-4">პროცესი</p>
+            <h1 class="font-display font-bold text-5xl lg:text-6xl text-neutral-900 mb-6">
+                როგორ მუშაობს
+            </h1>
+            <p class="text-neutral-600 text-lg max-w-3xl mx-auto leading-relaxed">
+                შერჩევიდან გაშვებამდე — აი, როგორ ვაქცევთ ადგილობრივ ქართულ ბიზნესებს ციფრულ წარმატების ისტორიებად.
+            </p>
+        </div>
+    </section>
+
+    <section class="py-20 lg:py-32 bg-white">
+        <div class="max-w-7xl mx-auto px-6 lg:px-8">
+            <div class="space-y-16">
+                <div class="grid lg:grid-cols-12 gap-8 items-start">
+                    <div class="lg:col-span-3">
+                        <div class="flex items-center space-x-4">
+                            <div
+                                class="w-16 h-16 bg-primary text-white rounded-full flex items-center justify-center font-display font-bold text-2xl flex-shrink-0">
+                                1
+                            </div>
+                            <h3 class="font-display font-bold text-2xl lg:text-3xl text-neutral-900">შერჩევა და
+                                სტრატეგია</h3>
+                        </div>
+                    </div>
+                    <div class="lg:col-span-9 border-l-4 border-primary pl-6">
+                        <p class="text-neutral-600 leading-relaxed text-lg">
+                            ჩვენ ვპოულობთ ადგილობრივ ფიზიკურ ბიზნესებს — კაფეებს, ხელოსნებსა და სერვისის მიმწოდებლებს —
+                            რომლებსაც არ აქვთ თანამედროვე ციფრული სივრცე. მათი ისტორიის გასაცნობად მოკლე კონსულტაციის
+                            შემდეგ, ჩვენ ვგეგმავთ პროფესიონალურ, SEO-ზე ოპტიმიზებულ ვებსაიტს.
+                        </p>
+                    </div>
+                </div>
+
+                <div class="grid lg:grid-cols-12 gap-8 items-start">
+                    <div class="lg:col-span-3">
+                        <div class="flex items-center space-x-4">
+                            <div
+                                class="w-16 h-16 bg-primary text-white rounded-full flex items-center justify-center font-display font-bold text-2xl flex-shrink-0">
+                                2
+                            </div>
+                            <h3 class="font-display font-bold text-2xl lg:text-3xl text-neutral-900">დეველოპმენტი და
+                                მენტორობა</h3>
+                        </div>
+                    </div>
+                    <div class="lg:col-span-9 border-l-4 border-primary pl-6">
+                        <p class="text-neutral-600 leading-relaxed text-lg">
+                            თითოეული პროექტი ენიჭება Front-end დეველოპერ სტაჟიორს. Developers Alliance-ის გამოცდილი
+                            (Senior) სპეციალისტების უშუალო ზედამხედველობით, სტაჟიორი ქმნის რესპონსიულ, მაღალი წარმადობის
+                            ვებსაიტს. ეს უზრუნველყოფს, რომ ბიზნესი იღებს უმაღლესი ხარისხის პროდუქტს, ხოლო სტაჟიორი -
+                            რეალურ პრაქტიკულ გამოცდილებას.
+                        </p>
+                    </div>
+                </div>
+
+                <div class="grid lg:grid-cols-12 gap-8 items-start">
+                    <div class="lg:col-span-3">
+                        <div class="flex items-center space-x-4">
+                            <div
+                                class="w-16 h-16 bg-primary text-white rounded-full flex items-center justify-center font-display font-bold text-2xl flex-shrink-0">
+                                3
+                            </div>
+                            <h3 class="font-display font-bold text-2xl lg:text-3xl text-neutral-900">გაშვება და ჰოსტინგი
+                            </h3>
+                        </div>
+                    </div>
+                    <div class="lg:col-span-9 border-l-4 border-primary pl-6 space-y-4">
+                        <p class="text-neutral-600 leading-relaxed text-lg">
+                            ჩვენ უბრალოდ არ ვქმნით საიტს. ჩვენ ვიღებთ ჩვენს თავზე ტექნიკურ ნაწილს:
+                        </p>
+                        <ul class="space-y-3 text-neutral-600 text-lg">
+                            <li class="flex items-start">
+                                <span class="text-primary mr-3 mt-1 text-2xl">•</span>
+                                <span><strong class="text-neutral-900">დომენის რეგისტრაცია:</strong> პროფესიონალური
+                                    ვებ-მისამართის უზრუნველყოფა.</span>
+                            </li>
+                            <li class="flex items-start">
+                                <span class="text-primary mr-3 mt-1 text-2xl">•</span>
+                                <span><strong class="text-neutral-900">უსაფრთხო ჰოსტინგი:</strong> სტაბილური გარემოს
+                                    უზრუნველყოფა, რათა საიტი ყოველთვის ხელმისაწვდომი იყოს.</span>
+                            </li>
+                            <li class="flex items-start">
+                                <span class="text-primary mr-3 mt-1 text-2xl">•</span>
+                                <span><strong class="text-neutral-900">Google Business-ის ინტეგრაცია:</strong> იმის
+                                    უზრუნველყოფა, რომ ბიზნესი გამოჩნდეს რუკაზე და მარტივად იძებნებოდეს.</span>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+
+                <div class="grid lg:grid-cols-12 gap-8 items-start">
+                    <div class="lg:col-span-3">
+                        <div class="flex items-center space-x-4">
+                            <div
+                                class="w-16 h-16 bg-primary text-white rounded-full flex items-center justify-center font-display font-bold text-2xl flex-shrink-0">
+                                4
+                            </div>
+                            <h3 class="font-display font-bold text-2xl lg:text-3xl text-neutral-900">საზოგადოების
+                                განვითარება
+                            </h3>
+                        </div>
+                    </div>
+                    <div class="lg:col-span-9 border-l-4 border-primary pl-6">
+                        <p class="text-neutral-600 leading-relaxed text-lg">
+                            საიტის გაშვების შემდეგ, ბიზნესს აქვს ციფრულ ეკონომიკაში კონკურენციისთვის საჭირო
+                            ინსტრუმენტები. სტაჟიორი იღებს პროფესიონალურ ნამუშევარს პორტფოლიოსთვის და დახვეწილ უნარებს,
+                            ხოლო თბილისის ადგილობრივი ეკონომიკა ოდნავ უფრო ძლიერი ხდება.
+                        </p>
+                    </div>
+                </div>
+
+                <div class="grid lg:grid-cols-12 gap-8 items-start">
+                    <div class="lg:col-span-3">
+                        <div class="flex items-center space-x-4">
+                            <div
+                                class="w-16 h-16 bg-primary text-white rounded-full flex items-center justify-center font-display font-bold text-2xl flex-shrink-0">
+                                5
+                            </div>
+                            <h3 class="font-display font-bold text-2xl lg:text-3xl text-neutral-900">მასშტაბირება და
+                                ზრდა</h3>
+                        </div>
+                    </div>
+                    <div class="lg:col-span-9 border-l-4 border-primary pl-6 space-y-8">
+                        <div>
+                            <h4 class="font-display font-semibold text-xl text-neutral-900 mb-3">თქვენი ციფრული
+                                გზამკვლევი
+                            </h4>
+                            <p class="text-neutral-600 leading-relaxed text-lg">
+                                ჩვენი მიზანია დაგეხმაროთ საწყისი ვებსაიტის განვითარებაში ჩვენი წევრებისა და პარტნიორების
+                                მიერ შეთავაზებული უფასო ელ-კომერციის ტრენინგების მეშვეობით. თქვენი ბიზნესის ზრდასთან
+                                ერთად, განვითარდება თქვენი ციფრული საჭიროებებიც — იქნება ეს დაჯავშნის ავტომატიზებული AI
+                                აგენტები, ინვენტარის მართვის სისტემები თუ სრულყოფილი ელექტრონული მაღაზია.
+                            </p>
+                        </div>
+                        <div>
+                            <h4 class="font-display font-semibold text-xl text-neutral-900 mb-3">პროფესიონალურ
+                                სერვისებზე გადასვლა</h4>
+                            <p class="text-neutral-600 leading-relaxed text-lg">
+                                როდესაც მზად იქნებით მაღალი სირთულის სისტემებისთვის, ჩვენ გთავაზობთ შეუფერხებელ
+                                გადასვლას Developers Alliance-ის უფროს (Senior) გუნდთან. ამ ეტაპზე, თქვენი პროექტი
+                                მოხალისეობრივი ინიციატივიდან გადადის პროფესიონალური სერვისის კატეგორიაში, რაც
+                                უზრუნველყოფს გლობალურ მასშტაბზე გასასვლელად საჭირო ინფრასტრუქტურას.
+                            </p>
+                        </div>
+                        <div>
+                            <h4 class="font-display font-semibold text-xl text-neutral-900 mb-3">არჩევანის თავისუფლება
+                            </h4>
+                            <p class="text-neutral-600 leading-relaxed text-lg">
+                                ჩვენი მისია თქვენი წარმატებაა და არა შემბოჭველი კონტრაქტები. თქვენ არ გაქვთ ვალდებულება
+                                გააგრძელოთ ჩვენი ფასიანი სერვისებით სარგებლობა; თქვენი საიტი თქვენია და ყოველთვის
+                                თავისუფალი ხართ აირჩიოთ ნებისმიერი სხვა სააგენტო. ჩვენ უბრალოდ ბედნიერები ვართ, რომ
+                                თქვენი ზრდისთვის მყარი საფუძველი შევქმენით.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="py-20 lg:py-32 bg-neutral-50 border-t border-neutral-200">
+        <div class="max-w-4xl mx-auto px-6 lg:px-8">
+            <div class="text-center mb-12">
+                <p class="text-sm font-semibold text-primary uppercase tracking-wider mb-4">მოთხოვნები</p>
+                <h2 class="font-display font-bold text-4xl lg:text-5xl text-neutral-900 mb-6">
+                    შერჩევის კრიტერიუმები
+                </h2>
+                <p class="text-neutral-600 leading-relaxed text-lg">
+                    იმის უზრუნველსაყოფად, რომ ვეხმარებით იმ ბიზნესებს, რომლებსაც ეს ყველაზე მეტად სჭირდებათ და ჩვენს
+                    სტაჟიორებს ვაძლევთ მაღალი ხარისხის პროექტებს, ჩვენ ვეძებთ პარტნიორებს, რომლებიც აკმაყოფილებენ შემდეგ
+                    კრიტერიუმებს:
+                </p>
+            </div>
+
+            <div class="space-y-6">
+                <div class="bg-white p-8 border-l-4 border-primary shadow-sm">
+                    <h3 class="font-display font-semibold text-xl text-neutral-900 mb-3">ფიზიკური ლოკაცია</h3>
+                    <p class="text-neutral-600 leading-relaxed">
+                        თქვენ ხართ ფიზიკური ბიზნესი, ხელოსანი ან მეწარმე, რომელიც ძირითადად ოპერირებს საქართველოში
+                        (განსაკუთრებით თბილისის საზოგადოებაზე ფოკუსირებით).
+                    </p>
+                </div>
+
+                <div class="bg-white p-8 border-l-4 border-primary shadow-sm">
+                    <h3 class="font-display font-semibold text-xl text-neutral-900 mb-3">ციფრული ვაკუუმი</h3>
+                    <p class="text-neutral-600 leading-relaxed">
+                        თქვენ ამჟამად არ გაქვთ ვებსაიტი, ან თქვენი არსებული საიტი საგრძნობლად მოძველებულია (მაგ.,
+                        ინფორმაცია "კოვიდამდელი" პერიოდიდან, არარესპონსიული დიზაინი ან გაფუჭებული ბმულები).
+                    </p>
+                </div>
+
+                <div class="bg-white p-8 border-l-4 border-primary shadow-sm">
+                    <h3 class="font-display font-semibold text-xl text-neutral-900 mb-3">ინფორმაციის სიზუსტე</h3>
+                    <p class="text-neutral-600 leading-relaxed">
+                        თქვენ შეგიძლიათ მოგვაწოდოთ აუცილებელი მაღალი რეზოლუციის ფოტოები, განახლებული ფასები/მენიუ და
+                        ბიზნესის ძირითადი დეტალები (სამუშაო საათები, ლოკაცია, საკონტაქტო ინფო), რათა საიტი სასარგებლო
+                        იყოს მომხმარებლებისთვის.
+                    </p>
+                </div>
+
+                <div class="bg-white p-8 border-l-4 border-primary shadow-sm">
+                    <h3 class="font-display font-semibold text-xl text-neutral-900 mb-3">განვითარების პოტენციალი</h3>
+                    <p class="text-neutral-600 leading-relaxed">
+                        თქვენ ხართ მცირე ან საშუალო საწარმო. მიუხედავად იმისა, რომ ჩვენ მივესალმებით მასშტაბურ
+                        ოპერაციებს, ეს კონკრეტული ინიციატივა შექმნილია მათთვის, ვისაც ამჟამად არ აქვს სრულყოფილი
+                        სააგენტოს დაქირავების ბიუჯეტი.
+                    </p>
+                </div>
+
+                <div class="bg-white p-8 border-l-4 border-primary shadow-sm">
+                    <h3 class="font-display font-semibold text-xl text-neutral-900 mb-3">გუნდური სულისკვეთება</h3>
+                    <p class="text-neutral-600 leading-relaxed">
+                        თქვენ მზად ხართ ითანამშრომლოთ ჩვენი სტაჟიორების გუნდთან და მიაწოდოთ უკუკავშირი დეველოპმენტის
+                        პროცესში, რათა დაეხმაროთ მათ განვითარებაში, სანამ ისინი თქვენს გაციფრულებაზე ზრუნავენ.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="py-20 lg:py-32 bg-primary text-white">
+        <div class="max-w-4xl mx-auto px-6 lg:px-8 text-center">
+            <h2 class="font-display font-bold text-4xl lg:text-5xl mb-6">
+                მზად ხართ დასაწყებად?
+            </h2>
+            <p class="text-white/90 text-lg mb-8 max-w-2xl mx-auto">
+                თუ აკმაყოფილებთ ჩვენს შერჩევის კრიტერიუმებს და მზად ხართ თქვენი ბიზნესის გაციფრულებისთვის, მოხარული
+                ვიქნებით მოგისმინოთ.
+            </p>
+            <a href="index.html#contact"
+                class="inline-block px-10 py-4 bg-white text-primary font-bold text-lg hover:bg-neutral-100 transition-all transform hover:scale-105 shadow-xl">
+                შეავსეთ განაცხადი დიგიტალიზაციაზე
+            </a>
+        </div>
+    </section>
+
+    <footer class="py-16" style="background-color: #F0F4F2;">
+        <div class="max-w-7xl mx-auto px-6 lg:px-8">
+            <div class="grid md:grid-cols-3 gap-12 pb-12 border-b border-neutral-300">
+                <div class="space-y-4">
+                    <div class="space-y-3">
+                        <div class="flex items-center space-x-2">
+                            <div class="w-2 h-2 bg-primary rounded-full"></div>
+                            <span class="text-sm font-semibold uppercase tracking-wide"
+                                style="color: #2C3333; opacity: 0.6;">პროექტის ავტორი</span>
+                        </div>
+                        <img src="../img/logo_black.png" alt="Developers Alliance" class="h-12 ml-4">
+                    </div>
+                    <p class="text-sm leading-relaxed" style="color: #2C3333; opacity: 0.8;">
+                        მორგებული ციფრული გადაწყვეტილებები და AI ინტეგრაციები, შექმნილი საქართველოს გულში. ვეხმარებით
+                        ადგილობრივ ეკონომიკას გლობალურ ბაზარზე გასვლაში.
+                    </p>
+                </div>
+
+                <div></div>
+
+                <div class="grid grid-cols-2 gap-8">
+                    <div>
+                        <h5 class="font-semibold text-sm mb-4 uppercase tracking-wide"
+                            style="color: #2C3333; opacity: 0.6;">სტუდია</h5>
+                        <ul class="space-y-2 text-sm" style="color: #2C3333; opacity: 0.8;">
+                            <li><a href="about.html" class="hover:text-primary transition-colors">ჩვენ შესახებ</a></li>
+                            <li><a href="portfolio.html" class="hover:text-primary transition-colors">პორტფოლიო</a></li>
+                            <li><a href="how_it_works.html" class="hover:text-primary transition-colors">როგორ
+                                    მუშაობს</a></li>
+                            <li><a href="index.html#contact" class="hover:text-primary transition-colors">კონტაქტი</a>
+                            </li>
+                        </ul>
+                    </div>
+                    <div>
+                        <h5 class="font-semibold text-sm mb-4 uppercase tracking-wide"
+                            style="color: #2C3333; opacity: 0.6;">კავშირი</h5>
+                        <ul class="space-y-2 text-sm" style="color: #2C3333; opacity: 0.8;">
+                            <li><a href="https://www.linkedin.com/company/developers-alliance-com/" target="_blank"
+                                    class="hover:text-primary transition-colors">LinkedIn</a></li>
+                            <li><a href="https://www.instagram.com/certified_magento_developers/" target="_blank"
+                                    class="hover:text-primary transition-colors">Instagram</a></li>
+                            <li><a href="https://www.developers-alliance.com/" target="_blank"
+                                    class="hover:text-primary transition-colors">Developers Alliance</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+
+            <div class="pt-8">
+                <p class="text-xs" style="color: #2C3333; opacity: 0.6;">
+                    © 2026 Developers Alliance. თბილისი, საქართველო.
+                </p>
+            </div>
+        </div>
+    </footer>
+
+    <script>
+        // Mobile menu toggle
+        document.addEventListener('DOMContentLoaded', function () {
+            const mobileMenuButton = document.getElementById('mobile-menu-button');
+            const mobileMenu = document.getElementById('mobile-menu');
+
+            mobileMenuButton.addEventListener('click', function () {
+                mobileMenu.classList.toggle('hidden');
+            });
+
+            // Close mobile menu when clicking on a link
+            const mobileLinks = mobileMenu.querySelectorAll('a');
+            mobileLinks.forEach(link => {
+                link.addEventListener('click', function () {
+                    mobileMenu.classList.add('hidden');
+                });
+            });
+        });
+    </script>
+
+</body>
+
+</html>
